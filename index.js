@@ -29,3 +29,35 @@ function sum(operation) {
 console.log(sum('divide')(2)(5));
 
 console.log('Ques.=> Write a currying function that takes infinite arguments.');
+
+// const infinite = (a) => {
+//   return (b) => {
+//     if (b) {
+//       return infinite(a + b);
+//     } else {
+//       return a;
+//     }
+//   };
+// };
+function infi(a)
+{
+  return function(b)
+  {
+    if(b)
+    {
+      return infi(a+b);
+    }
+    else{
+      return a;
+    }
+
+  }
+}
+
+console.log(infi(2)(3)(4));
+
+//recursive solution
+
+
+
+
