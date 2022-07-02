@@ -1,6 +1,9 @@
 // Import stylesheets
 import './style.css';
 
+console.log(
+  ' Ques.=> Evaluate(”sum”)(2)(4) ⇒ 2+4 = 6 on basis of input given to first param.'
+);
 function sum(operation) {
   return (a) => {
     return (b) => {
@@ -24,3 +27,5 @@ function sum(operation) {
 }
 
 console.log(sum('divide')(2)(5));
+
+console.log('Ques.=> Write a currying function that takes infinite arguments.');
