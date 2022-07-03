@@ -59,5 +59,17 @@ console.log(infi(2)(3)(4));
 //recursive solution
 
 
+const updateelement=id=>content=>document.querySelector(`#${id}`).textContent=content;
+
+
+const changeelement=updateelement('header');
+
+changeelement('Hello jain')
+
+
+
+
+
+
 
 
